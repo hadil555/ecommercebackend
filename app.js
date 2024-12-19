@@ -2,12 +2,14 @@ const express=require("express")
 const scategorieRouter =require("./routes/scategorie.route")
 const dotenv=require("dotenv")
 const cors=require("cors")
-const app=express();
+
 const mongoose=require("mongoose")
 const categorie = require("./models/categorie")
 const categorieRouter = require("./routes/categorie.route")
 const articleRouter =require("./routes/article.route")
 dotenv.config()
+
+const app=express();
 app.use(express.json())
 app.use(cors())
 
